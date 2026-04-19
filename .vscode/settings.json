@@ -1,0 +1,25 @@
+{
+  "claude.code.hooks": {
+    "preCommit": {
+      "command": "claude",
+      "args": ["--print", "Run pre-commit checks on staged files. Check for: debug statements, hardcoded secrets, missing tests for new functions, skipped tests. Use .claude/hooks/pre-commit.md for full checklist. Report issues or confirm all clear."],
+      "enabled": true
+    },
+    "onSave": {
+      "command": "claude",
+      "args": ["--print", "Quick lint check on the saved file. Report any syntax errors or obvious issues. Keep it brief."],
+      "enabled": false
+    }
+  },
+  "claude.code.agents": {
+    "code-reviewer": ".claude/agents/code-reviewer.md",
+    "debugger": ".claude/agents/debugger.md",
+    "test-writer": ".claude/agents/test-writer.md",
+    "doc-writer": ".claude/agents/doc-writer.md",
+    "security-auditor": ".claude/agents/security-auditor.md"
+  },
+  "claude.code.skills": {
+    "commit-push-pr": ".claude/skills/commit-push-pr.md",
+    "review-pr": ".claude/skills/review-pr.md"
+  }
+}
