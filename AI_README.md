@@ -383,4 +383,4 @@ Delete the files and remove references from `CLAUDE.md` and `.vscode/settings.js
 
 ## License
 
-[Choose your license]
+Distributed under the MIT License. See [LICENSE](file:///Users/dominik.hoehr/Workspaces/repos/private/vscode-copilot-workflow-template/LICENSE) for more information.
